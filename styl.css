@@ -1,0 +1,282 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+      background: linear-gradient(1deg, #514a4a, #3d4e6cab);
+}
+
+.alls{
+  background: url("img/bg.png");
+
+}
+
+header{
+	display: flex;
+	align-items: center;
+  background: #a6bdbf29;
+  box-shadow: 1px -10px 20px 0px snow;
+  padding: 15px;
+
+}
+
+.wp-info{
+  background: #00000080;
+}
+
+
+.logo{
+	margin-right: 100px;
+	margin-left: 25px;
+    flex-grow: 2.5;
+}
+
+.logo h1{
+    font-family: cursive;
+    color:#d2177c;
+}
+
+.main{
+	flex-grow: 1;
+
+}
+
+.main ul{
+	display: flex;
+}
+
+.main li a{
+	margin-right: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    background: #183f59;
+    color: yellow;
+    border-radius: 19px;
+    box-shadow: 6px -3px black;
+    border: 11px solid #183f59;
+
+}
+
+li{
+	list-style: none;
+	margin-right: 50px;
+}
+
+li:last-child{
+	margin-right: 0px;
+}
+
+.contact{
+    margin-right: 25px;
+    color:#d31c8a;
+}
+
+/*---------------------section-slid-----------------------------*/
+
+.Sliders{
+  width: 710px;
+  height: 390px;
+  overflow: hidden; /*все что твыходит за рамки скрывалось*/
+
+
+}
+
+.middle{
+  margin-left: 346px;
+}
+
+.navigation{
+  transform: translate(40%,-210%);
+  display: flex;
+}
+
+.bar{
+  height: 8px;
+  width: 30px;
+  cursor: pointer;
+  background-color: snow;
+  opacity: .3;
+  border-radius: 10px;
+  transition: all .4s ease;
+  margin-right: 3px;
+}
+
+.bar:hover{
+  opacity: 0.8;
+  transform: scale(1.1); /*становится больше*/
+}
+
+input[name="r"]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides{
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  transition: all .6s ease;
+  width: 25%;/* от 400% == 25% чтоб слайдер был под размер картинки */
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~.s1{
+  margin-left: 0;
+}
+#r2:checked ~.s1{
+  margin-left: -25%;
+}
+#r3:checked ~.s1{
+  margin-left: -50%;
+}
+#r4:checked ~.s1{
+  margin-left: -75%;
+}
+
+
+.r1ows{
+    color: #ff00eb;
+}
+
+/*      1rows */
+
+.r1ows h2{
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-family: cursive;
+}
+
+
+/*-----------------------------section------------------------------------------*/
+
+
+
+
+
+.Content{
+	margin-top: 25px;
+}
+
+.reos{
+	display: flex;
+
+}
+
+.inforam{
+	margin-right: 115px;
+    background: #183f5a;
+    box-shadow: 14px -11px 20px 7px black;
+    margin-top: 110px;
+        height: 419px;
+        color: snow;
+}
+
+.zagol{
+    text-align: initial;
+    margin-left: 25px;
+}
+
+.zagol h2{
+  font-family: ssl;
+  font-weight: normal;
+  letter-spacing: 0.08em;
+}
+
+.pic img{
+    width: 375px;
+    height: 230px;
+}
+
+
+.text p{
+  margin-left: 9px;
+  text-align: left;
+  width: 342px;
+  font-size: 14px;
+  font-family: cursive;
+  font-style: oblique;
+}
+
+
+@font-face{
+  font-family: "ssl";
+  src: url("/fonts/TitilliumWeb-Black.ttf") format("ttf");
+}
+
+
+
+.miniInfo{
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: nowrap;
+  background: #183f5a;
+  align-items: center;
+  width: 1405px;
+  box-shadow: 12px -8px 5px 2px;
+}
+
+.gif img{
+  width: 70%;
+  margin: 5px;
+}
+
+.texinf p{
+  color: snow;
+  font-family: sans-serif;
+}
+
+
+footer{
+  display: flex;
+  align-items: center;
+      background: linear-gradient(0deg, #000000eb, #480749);
+      margin-top:150px ;
+}
+
+.autorization{
+  flex-grow: 1;
+  background: #ffffff14;
+  max-width: 13em;
+  margin-left: 5px;
+}
+
+.mac h3{
+  font-family: cursive;
+}
+
+.log{
+  flex-grow: 1;
+}
+.log h1{
+  font-family: cursive;
+  color: #d2177c;
+  text-align: center;
+}
+.telegram{
+  color: #d2177c;
+}
+.telegram img{
+   width: 40px;
+}
+
+.formu input{
+  margin-top: 5px;
+
+}
+
+.formu button{
+  width: 45px;
+  height: 13px;
+  background: green;
+  border-radius: 15px;
+  margin-left: 127px;
+    margin-top: 12px;
+}
